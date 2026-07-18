@@ -143,3 +143,26 @@ Week2/
 ## Author
 **A. Vishnu Lakshmi**
 
+
+
+# E-Commerce Order Management Database System
+
+## Student Details
+- **Student Name:** A. Vishnu Lakshmi
+- **Course:** BCA
+- **Week:** 3
+
+## Week 3 - Entity Relationship (ER) Diagram and Relational Schema Design
+
+### Description
+This week's submission includes the Entity Relationship (ER) Diagram and Relational Schema for the E-Commerce Order Management Database System.
+
+### Submitted Files
+- ER_Diagram.png
+- Relational_Schema.pdf
+- ER_Design_Report.pdf
+- Relationship_Mapping_Report.pdf
+
+### Objective
+The objective of Week 3 is to design the ER Diagram, identify entities and relationships, define primary and foreign keys, specify cardinality and participation constraints, and convert the ER model into a Relational Schema for database implementation.
+
