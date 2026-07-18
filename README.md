@@ -158,6 +158,19 @@ This week's submission includes the Entity Relationship (ER) Diagram and Relatio
 - ER_Design_Report.pdf
 - Relationship_Mapping_Report.pdf
 
+E-Commerce-Order-Management-Database-System/
+│
+├── Week1/
+├── Week2/
+└── Week3/
+    ├── ER_Diagram.png
+    ├── Relational_Schema.pdf
+    ├── ER_Design_Report.pdf
+    ├── Relationship_Mapping_Report.pdf
+    └── README.md
+
+
+
 ### Objective
 The objective of Week 3 is to design the ER Diagram, identify entities and relationships, define primary and foreign keys, specify cardinality and participation constraints, and convert the ER model into a Relational Schema for database implementation.
 
