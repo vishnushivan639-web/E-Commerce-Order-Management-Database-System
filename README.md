@@ -144,35 +144,81 @@ Week2/
 **A. Vishnu Lakshmi**
 
 
+# E-Commerce Order Management Database System
+
+## 📌 Week 3 – Entity Relationship (ER) Diagram and Relational Schema Design
 
 
+## 📖 Project Overview
 
-## Week 3 - Entity Relationship (ER) Diagram and Relational Schema Design
+This repository contains the Week 3 submission for the **E-Commerce Order Management Database System**. The objective of this week is to design the Entity Relationship (ER) Diagram and convert the conceptual database model into a Relational Schema.
 
-### Description
-This week's submission includes the Entity Relationship (ER) Diagram and Relational Schema for the E-Commerce Order Management Database System.
+The ER Diagram illustrates the entities, attributes, relationships, primary keys, foreign keys, cardinality, and participation constraints of the system. The Relational Schema represents the logical structure of the database tables that will be implemented in the upcoming weeks.
 
-### Submitted Files
-- ER_Diagram.png
-- Relational_Schema.pdf
-- ER_Design_Report.pdf
-- Relationship_Mapping_Report.pdf
+---
 
-E-Commerce-Order-Management-Database-System/
-│
-├── Week1/
-├── Week2/
-└── Week3/
-    ├── ER_Diagram.png
-    ├── Relational_Schema.pdf
-    ├── ER_Design_Report.pdf
-    ├── Relationship_Mapping_Report.pdf
-    └── README.md
+## 🎯 Objectives
 
+- Design the complete Entity Relationship (ER) Diagram.
+- Represent all entities with their attributes.
+- Identify Primary Keys (PK) and Foreign Keys (FK).
+- Define relationships between entities.
+- Specify relationship cardinality.
+- Apply participation constraints.
+- Convert the ER model into a Relational Schema.
+- Verify the correctness of the relational model.
 
+---
 
-### Objective
-The objective of Week 3 is to design the ER Diagram, identify entities and relationships, define primary and foreign keys, specify cardinality and participation constraints, and convert the ER model into a Relational Schema for database implementation.
+## 📂 Project Files
+
+```
+Week3/
+│── ER_Diagram.png
+│── Relational_Schema.pdf
+│── ER_Design_Report.pdf
+│── Relationship_Mapping_Report.pdf
+│── README.md
+```
+
+---
+
+## 🗂️ Core Entities
+
+- Customer
+- Category
+- Product
+- Supplier
+- Order
+- Order Details
+- Payment
+- Shipment
+- Review
+
+---
+
+## 🛠️ Tools Used
+
+- Microsoft Word
+- Draw.io
+- Git
+- GitHub
+
+---
+
+## 📌 Learning Outcomes
+
+- Understood the concepts of Entity Relationship Modeling.
+- Identified entities, attributes, and relationships.
+- Designed an ER Diagram with proper cardinality and participation constraints.
+- Converted the ER model into a Relational Schema.
+- Prepared the database design documentation for SQL implementation.
+
+---
+
+## 📜 License
+
+This project is developed for academic purposes as part of the Database Management System (DBMS) course.
 
 
 ## Author
