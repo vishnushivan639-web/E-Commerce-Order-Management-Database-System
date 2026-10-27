@@ -301,3 +301,116 @@ The database name is `CustomerOrderDB`.
 
 ## Conclusion
 This project demonstrates relational database design, SQL queries, table relationships, data manipulation, and sales reporting. It can be used as a beginner-level DBMS mini-project for academic purposes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Payment Management System
+
+## Project Overview
+The Payment Management System is a MySQL-based project that extends the existing Customer Order Management System. It manages payment transactions, payment modes, payment statuses, and revenue reports.
+
+## Objectives
+- Create and manage payment records.
+- Link payments with existing customer orders.
+- Store different payment modes.
+- Update payment transaction statuses.
+- Generate payment and revenue analysis reports.
+- Maintain payment history for customers.
+
+## Technologies Used
+- MySQL 8.0+
+- SQL
+- MySQL Workbench
+
+## Database Name
+`CustomerOrderDB`
+
+## Tables Used
+- **Customer:** Stores customer information.
+- **Product:** Stores product details.
+- **Orders:** Stores customer order information.
+- **Order_Details:** Stores products included in each order.
+- **Payment:** Stores payment transaction information.
+
+## Payment Table Structure
+- `Payment_ID` – Primary Key
+- `Order_ID` – Foreign Key referencing Orders
+- `Payment_Date` – Date of payment
+- `Payment_Mode` – Payment method
+- `Payment_Status` – Transaction status
+- `Transaction_Amount` – Payment amount
+
+## Payment Modes
+- UPI
+- Credit Card
+- Debit Card
+- Net Banking
+- Cash on Delivery
+
+## Payment Status
+- Pending
+- Success
+- Failed
+
+## Constraints
+- Primary Key
+- Foreign Key
+- NOT NULL
+- UNIQUE
+- CHECK
+
+The UNIQUE constraint on `Order_ID` ensures that each order has at most one payment record.
+
+## Features
+- Insert new payment transactions.
+- Display all successful payments.
+- Find failed and pending transactions.
+- Update payment status after a retry.
+- Count successful and failed transactions.
+- Display complete payment details with customer and order information.
+- Generate payment mode analysis reports.
+- Calculate total successful payment revenue.
+- Calculate revenue by payment method.
+- Generate customer payment history.
+- Find orders with failed or pending payments.
+
+## How to Execute the Project
+1. Install MySQL Server and MySQL Workbench.
+2. Open MySQL Workbench and connect to the database server.
+3. Execute the existing `customer_order_management.sql` file first.
+4. Open the `payment_management.sql` file.
+5. Execute the SQL script.
+6. View the output of the payment queries.
+7. Capture screenshots of the query results for project submission.
+
+## Reports Generated
+- Number of transactions by payment mode.
+- Most preferred payment method.
+- Total successful payment revenue.
+- Revenue by payment method.
+- Average transaction amount.
+- Customer payment history.
+- Successful, failed, and pending transaction counts.
+- Orders with failed or pending payments.
+
+## Project Files
+- `payment_management.sql` – SQL script for payment table creation, sample data, transaction operations, and reports.
+- `Payment_Management_Documentation.pdf` – Project documentation.
+- `README.md` – Project overview and execution instructions.
+
+## Conclusion
+The Payment Management System demonstrates database table creation, relational constraints, SQL joins, transaction status management, and payment revenue analysis. It integrates with the existing Customer Order Management System and is suitable for a DBMS mini-project.
