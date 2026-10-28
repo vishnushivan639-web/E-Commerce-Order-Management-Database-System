@@ -412,5 +412,160 @@ The UNIQUE constraint on `Order_ID` ensures that each order has at most one paym
 - `Payment_Management_Documentation.pdf` – Project documentation.
 - `README.md` – Project overview and execution instructions.
 
+
 ## Conclusion
 The Payment Management System demonstrates database table creation, relational constraints, SQL joins, transaction status management, and payment revenue analysis. It integrates with the existing Customer Order Management System and is suitable for a DBMS mini-project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# E-Commerce Order Management Database System
+## Product Reviews and Ratings Module
+
+### 📌 Project Overview
+The Product Reviews and Ratings module is a part of the E-Commerce Order Management Database System. It allows customers to submit product reviews and ratings, helping analyze customer satisfaction and product quality.
+
+This module uses **MySQL** to store customer details, product information, ratings, and feedback. It also provides SQL queries to analyze product ratings, review counts, and customer feedback.
+
+### 🎯 Objectives
+- Store and manage customer reviews and product ratings.
+- Maintain relationships between customers, products, and reviews.
+- Perform Create, Read, Update, and Delete (CRUD) operations.
+- Calculate average product ratings.
+- Identify the highest-rated and most-reviewed products.
+- Identify products that require improvement.
+- Analyze customer feedback and rating distributions.
+
+### 🛠️ Technologies Used
+- **Database:** MySQL
+- **Language:** SQL
+- **Tool:** MySQL Workbench
+- **Version:** MySQL 8.0.16 or later recommended
+
+### 🗄️ Database Design
+
+The module contains three tables:
+
+**1. Customer**
+
+Stores customer information.
+
+| Column | Description |
+|---|---|
+| Customer_ID | Primary key |
+| Customer_Name | Customer's name |
+| Email | Customer's email address |
+
+**2. Product**
+
+Stores product information.
+
+| Column | Description |
+|---|---|
+| Product_ID | Primary key |
+| Product_Name | Name of the product |
+| Price | Product price |
+
+**3. Review**
+
+Stores customer ratings and feedback.
+
+| Column | Description |
+|---|---|
+| Review_ID | Auto-increment primary key |
+| Customer_ID | Foreign key referencing Customer |
+| Product_ID | Foreign key referencing Product |
+| Rating | Rating between 1 and 5 |
+| Review_Text | Customer feedback |
+| Review_Date | Date of the review |
+
+### 🔗 Relationships
+- One customer can submit multiple reviews.
+- One product can receive multiple reviews.
+- Each review belongs to one customer and one product.
+- Foreign key constraints maintain referential integrity.
+- The rating constraint allows values only between 1 and 5.
+- `ON DELETE RESTRICT` prevents deleting a customer or product that has associated reviews.
+
+### ⚙️ Features Implemented
+
+**1. Data Management**
+- Create Customer, Product, and Review tables.
+- Insert sample customer, product, and review data.
+- Retrieve records using SELECT statements.
+
+**2. Review Management**
+- Insert new product reviews.
+- Retrieve all reviews for a particular product.
+- Display customer names with their reviews.
+- View the five most recent reviews.
+- Filter reviews with ratings greater than 4.
+- Update review comments and ratings.
+- Delete a review.
+
+**3. Product Rating Analysis**
+- Calculate average ratings for each product.
+- Count the number of reviews per product.
+- Identify the highest-rated products.
+- Find products with average ratings above 4.
+- Identify the most-reviewed products.
+- Find products with average ratings below 3.
+- Generate product-wise review summaries.
+
+**4. Customer Feedback Analysis**
+- Count the number of reviews given by each customer.
+- Calculate each customer's average rating.
+- Count five-star reviews.
+- Summarize five-star, four-star, and low ratings.
+
+### 📊 SQL Concepts Used
+- `CREATE DATABASE` and `CREATE TABLE`
+- `INSERT`, `SELECT`, `UPDATE`, and `DELETE`
+- Primary keys and foreign keys
+- `NOT NULL`, `UNIQUE`, and `CHECK` constraints
+- `INNER JOIN` and `LEFT JOIN`
+- Aggregate functions: `COUNT()`, `AVG()`, `SUM()`, and `MAX()`
+- `GROUP BY` and `HAVING`
+- Subqueries
+- `CASE` expressions
+- `ORDER BY` and `LIMIT`
+
+### ▶️ How to Run the Project
+1. Install MySQL Server and MySQL Workbench.
+2. Open MySQL Workbench and create a new SQL query tab.
+3. Open the `Product_Reviews_Ratings.sql` script.
+4. Execute the script in the SQL editor.
+5. Verify the Customer, Product, and Review tables.
+6. Execute the analysis queries and review the result grids.
+7. Capture screenshots of the table structures and query outputs for project documentation.
+
+### 📁 Project Files
+- `Product_Reviews_Ratings.sql` — SQL script containing table creation, sample data, CRUD operations, and analysis queries.
+- `Product_Reviews_Ratings_Documentation.docx` — Project documentation covering database design, relationships, sample data, and analysis.
+
+### 🔮 Future Enhancements
+- Connect reviews to verified customer purchases using order tables.
+- Prevent duplicate reviews for the same purchase where required.
+- Add review moderation and inappropriate-content detection.
+- Develop a web interface for submitting and viewing reviews.
+- Generate visual reports and dashboards for product performance.
+
+### ✅ Conclusion
+The Product Reviews and Ratings module demonstrates how relational database concepts and SQL queries can be used to manage customer feedback and evaluate product performance. It provides useful insights into customer satisfaction and helps identify products that may require improvement.
+
+---
+
+**Project:** E-Commerce Order Management Database System  
+**Module:** Product Reviews and Ratings  
+**Database:** MySQL
+
