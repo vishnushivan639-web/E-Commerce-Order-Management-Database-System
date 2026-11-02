@@ -779,3 +779,186 @@ Through this Week 7 SQL implementation, I practiced retrieving and managing E-Co
 
 I also developed three basic reports to understand product availability, customer information, and overall business performance.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+# Week 8 – Database Relationship Analysis Using Joins
+
+## Project Overview
+
+This project focuses on analyzing relationships between tables in an E-Commerce Order Management Database System using SQL JOIN operations.
+
+The implementation combines customer, order, product, and payment information to retrieve meaningful data. It demonstrates INNER JOIN, LEFT JOIN, RIGHT JOIN, multi-table joins, customer purchase history, and business report generation.
+
+## Objectives
+
+- Understand relationships between related database tables.
+- Combine multiple tables using common attributes.
+- Implement INNER JOIN, LEFT JOIN, and RIGHT JOIN.
+- Retrieve complete order information.
+- Analyze customer purchase history.
+- Generate multi-table business reports.
+
+## 1. Combine Related Tables Using Joins
+
+Worked with the following database tables:
+
+- Customer
+- Orders
+- Product
+- Payment
+
+Used common attributes and foreign key relationships to retrieve related information from multiple tables.
+
+## 2. Implement INNER JOIN
+
+Implemented SQL queries to:
+
+- Display customer details along with their orders.
+- Display order details with payment information.
+- Retrieve products purchased by customers.
+
+**Purpose:** INNER JOIN retrieves only the records that have matching values in both related tables.
+
+## 3. Implement LEFT JOIN
+
+Implemented SQL queries to:
+
+- Display all customers, including customers who have not placed orders.
+- Find customers without any purchases.
+- Display all products, including products with no sales.
+
+**Purpose:** LEFT JOIN retrieves all records from the left table and matching records from the right table. Unmatched right-side values are displayed as NULL.
+
+## 4. Implement RIGHT JOIN
+
+Implemented SQL queries to:
+
+- Display all orders with customer information.
+- Find orders where customer details are missing.
+- Display all payment records with order details.
+
+**Purpose:** RIGHT JOIN retrieves all records from the right table and matching records from the left table. Unmatched left-side values are displayed as NULL.
+
+## 5. Retrieve Complete Order Details
+
+Generated a complete order report by combining information from multiple tables.
+
+**Information included:**
+
+- Customer Name
+- Product Name
+- Quantity
+- Order Date
+- Total Amount
+- Payment Status
+
+**Purpose:** To retrieve complete transaction information by connecting customer, order, product, order details, and payment tables.
+
+## 6. Display Customer Purchase History
+
+Implemented SQL queries to:
+
+- Display all products purchased by a customer.
+- Calculate the total amount spent by each customer.
+- Count the number of orders placed by each customer.
+- Retrieve the latest purchase details of customers.
+
+**Purpose:** To understand customer purchasing activities, order frequency, spending patterns, and purchase history.
+
+## 7. Generate Multi-Table Business Reports
+
+### Report 1: Customer Order Report
+
+**Information included:**
+
+- Customer Name
+- Order ID
+- Order Date
+- Order Status
+
+**Purpose:** Provides customer-wise order information and helps track order activity.
+
+### Report 2: Sales Report
+
+**Information included:**
+
+- Product Name
+- Quantity Sold
+- Total Revenue
+
+**Purpose:** Helps analyze product sales and revenue generated from purchases.
+
+### Report 3: Payment Analysis Report
+
+**Information included:**
+
+- Payment Mode
+- Number of Transactions
+- Successful Payments
+
+**Purpose:** Helps understand payment methods and analyze successful payment transactions.
+
+### Report 4: Customer Purchase Analysis
+
+**Analysis includes:**
+
+- Top Purchasing Customers
+- Customers with Maximum Orders
+- Customers with Highest Spending
+
+**Purpose:** Helps identify customer purchasing patterns, order frequency, and spending behavior.
+
+## Technologies Used
+
+- **Database:** MySQL
+- **Query Language:** SQL
+- **Database Tool:** MySQL Workbench
+
+## SQL Concepts Used
+
+- INNER JOIN
+- LEFT JOIN
+- RIGHT JOIN
+- Multi-Table JOIN
+- Primary Key
+- Foreign Key
+- GROUP BY
+- ORDER BY
+- COUNT()
+- SUM()
+- Aggregate Functions
+- NULL Value Handling
+
+## Submission Files
+
+1. SQL JOIN Query File (`.sql`)
+2. INNER JOIN Examples
+3. LEFT JOIN Examples
+4. RIGHT JOIN Examples
+5. Complete Order Report
+6. Customer Purchase History Report
+7. Multi-Table Business Reports
+
+## Conclusion
+
+Through this Week 8 implementation, I practiced combining related database tables using SQL JOIN operations. I learned how INNER JOIN, LEFT JOIN, and RIGHT JOIN retrieve matching and non-matching records.
+
+I also worked on complete order details, customer purchase history, sales information, and payment analysis. These queries helped me understand database relationships and how multiple tables can be used to generate meaningful business reports.
+
+
