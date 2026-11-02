@@ -569,3 +569,213 @@ The Product Reviews and Ratings module demonstrates how relational database conc
 **Module:** Product Reviews and Ratings  
 **Database:** MySQL
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+# Week 7 – SQL Query Implementation for E-Commerce Database
+
+## Project Overview
+
+This project focuses on implementing SQL queries for an E-Commerce Order Management Database System. It demonstrates how SQL is used to retrieve, filter, sort, and analyze customer, product, order, and payment information.
+
+The implementation covers basic SQL operations, filtering conditions, sorting, unique value retrieval, product searches, table joins, multiple filtering conditions, and basic business reports.
+
+## Objectives
+
+- Retrieve customer, product, order, and payment information.
+- Apply filtering conditions using the `WHERE` clause.
+- Sort records using `ORDER BY`.
+- Retrieve unique values using `DISTINCT`.
+- Search products based on price, category, name, and stock.
+- Retrieve related information using SQL joins.
+- Apply multiple conditions using `AND`, `OR`, `BETWEEN`, `LIKE`, and `IN`.
+- Generate basic business analysis reports.
+
+## 1. Basic SQL Queries
+
+Implemented queries to:
+
+- Display all customer details.
+- Display all available products.
+- Retrieve product names and prices.
+- Display all customer orders.
+- Retrieve payment details.
+
+## 2. Filtering Conditions Using WHERE
+
+Implemented queries to:
+
+- Find products with prices greater than ₹5,000.
+- Display products available in stock.
+- Find customers from a particular city.
+- Display completed orders.
+- Find products with ratings above 4.
+
+## 3. Sorting Data Using ORDER BY
+
+Implemented queries to:
+
+- Display products from lowest to highest price.
+- Display customers alphabetically.
+- Find the most expensive products.
+- Display the latest orders first.
+
+## 4. Unique Values Using DISTINCT
+
+Implemented queries to:
+
+- Display unique product categories.
+- Find different payment methods.
+- Display unique customer locations.
+
+## 5. Product Search Based on Conditions
+
+Implemented queries to:
+
+- Find products within the price range of ₹1,000–₹5,000.
+- Display products belonging to a particular category.
+- Find products currently available in inventory.
+- Search products using product names.
+- Find low-stock products.
+
+## 6. Customer and Product Information
+
+Implemented queries to:
+
+- Display customer details with their orders.
+- Display product details with category information.
+- Find customers who purchased a specific product.
+- Display products purchased by each customer.
+
+## 7. Multiple Filtering Conditions
+
+Applied the following SQL operators:
+
+- `AND`
+- `OR`
+- `BETWEEN`
+- `LIKE`
+- `IN`
+
+Implemented queries to:
+
+- Find Electronics products costing more than ₹10,000.
+- Find customers from Chennai or Bangalore.
+- Search products containing the word "Mobile".
+- Find orders placed within a specific date range.
+
+## 8. Basic Business Reports
+
+### Report 1: Product Search Report
+
+This report retrieves product information based on different search conditions.
+
+**Information included:**
+- Product ID
+- Product Name
+- Product Price
+- Product Category
+- Stock Quantity
+- Availability Status
+
+**Analysis:** Helps identify products based on price range, category, product name, and inventory availability.
+
+### Report 2: Customer Information Report
+
+This report provides customer details and their order information.
+
+**Information included:**
+- Customer ID
+- Customer Name
+- Email Address
+- City
+- Registration Date
+- Order ID
+- Order Date
+- Order Amount
+- Order Status
+
+**Analysis:** Helps understand customer distribution by city, customer registrations, and purchasing activity.
+
+### Report 3: Basic Business Analysis Report
+
+This report analyzes the overall business information using SQL queries.
+
+**A. Product Availability Analysis**
+- Available products
+- Out-of-stock products
+- Total inventory quantity
+- Product availability status
+
+**B. Customer Analysis**
+- Total number of customers
+- Customer distribution by city
+- New customer registrations
+
+**C. Order Analysis**
+- Total orders
+- Completed orders
+- Pending orders
+- Cancelled orders
+- Total sales from completed orders
+
+**D. Product Performance Analysis**
+- Highest-priced products
+- Most reviewed products
+- Average product ratings
+- Available products
+
+**Analysis:** Helps summarize product availability, customer activity, order status, and product performance.
+
+## Technologies Used
+
+- **Database:** MySQL
+- **Query Language:** SQL
+- **Database Tool:** MySQL Workbench
+
+## SQL Concepts Used
+
+- CREATE DATABASE
+- CREATE TABLE
+- INSERT INTO
+- SELECT
+- WHERE
+- ORDER BY
+- DISTINCT
+- BETWEEN
+- LIKE
+- IN
+- AND / OR
+- JOIN
+- GROUP BY
+- COUNT()
+- SUM()
+- AVG()
+- CASE
+
+## Submission Files
+
+1. SQL Query Implementation File (`.sql`)
+2. Query Output Screenshots
+3. Product Search Report
+4. Customer Information Report
+5. Basic Business Analysis Report
+
+## Conclusion
+
+Through this Week 7 SQL implementation, I practiced retrieving and managing E-Commerce database information using SQL queries. I applied filtering, sorting, searching, joins, aggregate functions, and multiple conditions to extract meaningful information from database tables.
+
+I also developed three basic reports to understand product availability, customer information, and overall business performance.
+
